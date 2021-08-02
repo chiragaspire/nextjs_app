@@ -54,6 +54,7 @@ export const getStaticProps = async (context) => {
     
       client.close();
     return {
+        fallback:'blocking',
         props: {
             meetups: {
                 
